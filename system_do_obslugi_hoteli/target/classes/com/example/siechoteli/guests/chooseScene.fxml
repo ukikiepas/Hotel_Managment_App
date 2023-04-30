@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: GhostWhite;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.siechoteli.klient.guests.ChooseSceneController">
+   <children>
+      <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToGuests" prefHeight="400.0" prefWidth="300.0" style="-fx-border-color: #ccccff; -fx-border-width: 8; -fx-border-radius: 15; -fx-background-color: GhostWhite;" styleClass="b" AnchorPane.leftAnchor="0.0">
+         <graphic>
+            <ImageView fitHeight="233.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="600.0" mnemonicParsing="false" onAction="#switchToSearchRooms" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: GhostWhite; -fx-border-color: #ccccff; -fx-border-width: 8; -fx-border-radius: 15;">
+         <graphic>
+            <ImageView fitHeight="223.0" fitWidth="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/signboard.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="300.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: GhostWhite; -fx-border-color: #b3ffff; -fx-border-width: 10; -fx-border-radius: 15;">
+         <graphic>
+            <ImageView fitHeight="204.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/left.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text fill="#7c7878" layoutX="5.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register guest" textAlignment="CENTER" wrappingWidth="286.868408203125">
+         <font>
+            <Font name="Monospaced Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#7c7878" layoutX="600.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check rooms" textAlignment="CENTER" wrappingWidth="300.0">
+         <font>
+            <Font name="Monospaced Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#7c7878" layoutX="306.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get back" textAlignment="CENTER" wrappingWidth="286.868408203125">
+         <font>
+            <Font name="Monospaced Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

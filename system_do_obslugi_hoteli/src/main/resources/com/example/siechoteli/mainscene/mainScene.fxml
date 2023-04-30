@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.siechoteli.MainSceneController">
+  <tabs>
+    <Tab text="Hotels">
+      <content>
+        <AnchorPane layoutX="250.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="#1af7ff00" layoutX="174.0" layoutY="236.0" opacity="0.74" radius="160.0" stroke="#58e9ff" strokeType="INSIDE" strokeWidth="5.0" />
+                  <Circle fx:id="circleSpectra" fill="#556c80" layoutX="174.0" layoutY="236.0" radius="155.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3.0" />
+                  <Label fx:id="hotelName" layoutX="245.0" layoutY="-7.0" prefHeight="88.0" prefWidth="424.0" text="Hotel Relax Spectra">
+                     <font>
+                        <Font name="Dubai Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="426.0" layoutY="98.14285278320312" />
+                  <Button layoutX="334.0" layoutY="406.0" mnemonicParsing="false" prefWidth="80.0" text="Previous" />
+                  <Button layoutX="437.0" layoutY="406.0" mnemonicParsing="false" prefWidth="80.0" text="Next" />
+                  <VBox layoutX="384.0" layoutY="94.0" prefHeight="287.0" prefWidth="330.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stars: " textAlignment="CENTER" wrappingWidth="409.4140625">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Most affordable (one person): 90$" textAlignment="CENTER" wrappingWidth="407.44482421875">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Best standard (one person): 250$" textAlignment="CENTER" wrappingWidth="408.0777587890625">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Line endX="-588.2026977539062" startX="-183.132080078125" startY="0.4142311215400696" stroke="#00beff" strokeWidth="2.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NYC  | Saint Albert 23 Street | PC: 10001 | +347 917 929" textAlignment="CENTER" wrappingWidth="407.02557373046875" />
+                     </children>
+                  </VBox>
+                  <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Reservations">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="48.0" layoutY="101.0" prefHeight="182.0" prefWidth="110.0" spacing="6.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="10.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="10.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="10.0" layoutY="102.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="10.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID number:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="10.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="10.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="159.0" layoutY="105.0" prefHeight="204.0" prefWidth="110.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="textFieldName" />
+                        <TextField fx:id="textFieldSurname" />
+                        <TextField fx:id="textFieldEmail" layoutX="10.0" layoutY="40.0" />
+                        <TextField fx:id="textFieldTelephone" layoutX="10.0" layoutY="70.0" />
+                        <TextField fx:id="textFieldID_number" layoutX="10.0" layoutY="101.0" />
+                        <TextField fx:id="textField" layoutX="10.0" layoutY="131.0" prefWidth="110.0" />
+                        <TextField layoutX="10.0" layoutY="161.0" prefWidth="110.0" />
+                     </children>
+                  </VBox>
+                  <TableView fx:id="tableViewGuests" layoutX="321.0" layoutY="68.0" prefHeight="282.0" prefWidth="377.0">
+                    <columns>
+                      <TableColumn fx:id="columName" prefWidth="75.0" text="NAME" />
+                      <TableColumn fx:id="columnSurname" prefWidth="75.0" text="SURNAME" />
+                        <TableColumn fx:id="columnEmail" prefWidth="75.0" text="EMAIL" />
+                        <TableColumn fx:id="columnTelephone" prefWidth="75.0" text="TELEPHONE" />
+                        <TableColumn fx:id="columnID_number" prefWidth="75.0" text="ID_NUMBER" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="22.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Add" textAlignment="CENTER" />
+                  <Button layoutX="119.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Update" textAlignment="CENTER" />
+                  <Button layoutX="214.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Delete" textAlignment="CENTER" />
+               </children></AnchorPane>
+         </content>
+    </Tab>
+      <Tab text="Guests">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+      <Tab text="Informations">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

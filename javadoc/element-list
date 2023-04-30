@@ -1,0 +1,12 @@
+module:com.example.siechoteli
+com.example.siechoteli.chatserver
+com.example.siechoteli.klient.guests
+com.example.siechoteli.klient.helpscene
+com.example.siechoteli.klient.hotels
+com.example.siechoteli.klient.klientlivechat
+com.example.siechoteli.klient.login
+com.example.siechoteli.klient.mainapp
+com.example.siechoteli.klient.mainscene
+com.example.siechoteli.klient.rooms
+com.example.siechoteli.server
+com.example.siechoteli.utilities

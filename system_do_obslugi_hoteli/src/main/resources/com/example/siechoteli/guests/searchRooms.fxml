@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: GhostWhite;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.siechoteli.klient.guests.RoomsController">
+   <children>
+      <TableView fx:id="tableViewRooms" layoutX="71.0" layoutY="33.0" prefHeight="552.0" prefWidth="903.0">
+        <columns>
+          <TableColumn fx:id="columnRoomID" prefWidth="100.0" text="roomID" />
+          <TableColumn fx:id="columnRoomNumber" prefWidth="100.0" text="roomNumber" />
+            <TableColumn fx:id="columnPrice_PN" prefWidth="100.0" text="price_PN" />
+            <TableColumn fx:id="columnBedQuantity" prefWidth="100.0" text="bedQuantity" />
+            <TableColumn fx:id="columnStandard" prefWidth="100.0" text="Standard" />
+            <TableColumn fx:id="columnAvaliable" prefWidth="100.0" text="Avaliable" />
+            <TableColumn fx:id="columnStartDate" prefWidth="100.0" text="startDate" />
+            <TableColumn fx:id="columnFinishDate" prefWidth="100.0" text="finishDate" />
+            <TableColumn fx:id="columnHotelName" prefWidth="100.0" text="hotelName" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

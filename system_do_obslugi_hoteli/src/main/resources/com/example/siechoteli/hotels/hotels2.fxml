@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: GhostWhite;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.siechoteli.klient.hotels.HotelsController2">
+    <children>
+        <Circle fx:id="circleOutside" fill="#1af7ff00" layoutX="174.0" layoutY="236.0" opacity="0.74" radius="160.0" stroke="#58e9ff" strokeType="INSIDE" strokeWidth="5.0" />
+        <Circle fx:id="circleInside" fill="#556c80" layoutX="174.0" layoutY="236.0" radius="155.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3.0" />
+        <Label fx:id="hotelName" layoutX="245.0" layoutY="-7.0" prefHeight="88.0" prefWidth="424.0" text="Hotel Relax LJH">
+            <font>
+                <Font name="Dubai Bold" size="40.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="426.0" layoutY="98.14285278320312" />
+        <VBox layoutX="384.0" layoutY="94.0" prefHeight="287.0" prefWidth="330.0" spacing="5.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stars: " textAlignment="CENTER" wrappingWidth="409.4140625">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Text>
+                <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-star-96.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" layoutX="195.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-star-96.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" layoutX="215.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-star-96.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" layoutX="234.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-star-96.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Most affordable (one person): 60$" textAlignment="CENTER" wrappingWidth="407.44482421875">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin>
+                </Text>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="8.0">
+                    <children>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-wi-fi-50.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-bath-50.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-tv-g-50.png" />
+                            </image></ImageView>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Best standard (one person): 300$" textAlignment="CENTER" wrappingWidth="408.0777587890625">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin>
+                </Text>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="8.0">
+                    <children>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-wi-fi-50.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-bath-50.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-tv-g-50.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-fridge-50.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-sauna-50.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8-balcony-50.png" />
+                            </image>
+                        </ImageView>
+                  <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-gym-66.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </HBox>
+                <Line endX="-588.2026977539062" startX="-183.132080078125" startY="0.4142311215400696" stroke="#00beff" strokeWidth="2.0" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Torronto | 21 Rockwood Drive Street | PC: 78215| +533 255 111" textAlignment="CENTER" wrappingWidth="407.02557373046875" />
+            </children>
+        </VBox>
+        <Text layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Text>
+      <Button layoutX="410.0" layoutY="398.0" mnemonicParsing="false" onAction="#nextButton" prefWidth="80.0" style="-fx-background-color: GhostWhite;">
+         <graphic>
+            <ImageView fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/previous.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="326.0" layoutY="398.0" mnemonicParsing="false" onAction="#previousButton" prefWidth="80.0" style="-fx-background-color: GhostWhite;">
+         <graphic>
+            <ImageView fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rightArrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonBack" layoutX="29.0" layoutY="15.0" mnemonicParsing="false" onAction="#backToMenu" style="-fx-background-color: GhostWhite;">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

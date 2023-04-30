@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="594.0" prefWidth="1200.0" style="-fx-background-color: GhostWhite;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.siechoteli.klient.guests.GuestsController">
+   <children>
+      <VBox layoutX="48.0" layoutY="101.0" prefHeight="278.0" prefWidth="113.0" spacing="6.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surname:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="102.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID number:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Standard" wrappingWidth="101.3992919921875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </Text>
+            <Text layoutX="10.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Number: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finish Date: " wrappingWidth="101.3992919921875">
+               <font>mo
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="101.3992919921875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets top="3.5" />
+         </padding>
+      </VBox>
+      <VBox layoutX="159.0" layoutY="105.0" prefHeight="340.0" prefWidth="110.0" spacing="5.0">
+         <children>
+            <TextField fx:id="textFieldName" />
+            <TextField fx:id="textFieldSurname" />
+            <TextField fx:id="textFieldEmail" layoutX="10.0" layoutY="40.0" />
+            <TextField fx:id="textFieldTelephone" layoutX="10.0" layoutY="70.0" />
+            <TextField fx:id="textFieldID_number" layoutX="10.0" layoutY="101.0" />
+            <ChoiceBox fx:id="hotelNamesChoiceBox" onMouseClicked="#PriceFilter" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: WHITE; -fx-border-color: grey; -fx-border-width: 0.5; -fx-border-radius: 4;" value="Hotel" />
+            <ChoiceBox fx:id="standardChoiceBox" onMouseClicked="#PriceFilter" prefHeight="26.0" prefWidth="165.0" style="-fx-background-color: WHITE; -fx-border-color: grey; -fx-border-width: 0.5; -fx-border-radius: 4;" value="Standard" />
+            <ChoiceBox fx:id="RoomNumberChoiceBox" onMouseClicked="#RoomsFilter" prefWidth="150.0" style="-fx-background-color: WHITE; -fx-border-color: grey; -fx-border-width: 0.5; -fx-border-radius: 4;" value="Room Number" />
+            <DatePicker fx:id="textFieldStartDate" />
+            <DatePicker fx:id="textFieldFinishDate" />
+            <ChoiceBox fx:id="PriceTextField" onMouseClicked="#func" prefWidth="150.0" style="-fx-background-color: white; -fx-border-radius: 4; -fx-border-color: grey; -fx-border-width: 0.5;" value="Get price here!" />
+         </children>
+      </VBox>
+      <TableView fx:id="tableViewGuests" layoutX="299.0" layoutY="57.0" onMouseClicked="#handleMouseAction" prefHeight="476.0" prefWidth="828.0">
+         <columns>
+            <TableColumn fx:id="columName" prefWidth="75.0" text="NAME" />
+            <TableColumn fx:id="columnSurname" prefWidth="75.0" text="SURNAME" />
+            <TableColumn fx:id="columnEmail" prefWidth="75.0" text="EMAIL" />
+            <TableColumn fx:id="columnTelephone" prefWidth="75.0" text="TELEPHONE" />
+            <TableColumn fx:id="columnID_number" prefWidth="75.0" text="ID_NUMBER" />
+            <TableColumn fx:id="columnHotel" prefWidth="75.0" text="Hotel" />
+            <TableColumn fx:id="columnRoomNumber" prefWidth="75.0" text="Room Number" />
+            <TableColumn fx:id="columnStartDate" prefWidth="75.0" text="Start Date" />
+            <TableColumn fx:id="columnFinishDate" prefWidth="75.0" text="Finish Date" />
+            <TableColumn fx:id="columnStandard" prefWidth="75.0" text="Standard" />
+            <TableColumn fx:id="columnPrice" prefWidth="75.0" text="Price" />
+         </columns>
+      </TableView>
+      <Button fx:id="buttonBack" layoutX="30.0" layoutY="21.0" mnemonicParsing="false" onAction="#backToMenu" style="-fx-background-color: GhostWhite;">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="445.0" prefHeight="87.0" prefWidth="258.0" spacing="7.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addGuestsButton" prefHeight="0.0" prefWidth="0.0" style="-fx-background-radius: 10; -fx-background-color: GhostWhite;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#updateGuestsButton" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: GhostWhite; -fx-background-radius: 10;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitWidth="60.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 10;">
+                     <image>
+                        <Image url="@../images/update.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteGuestsButton" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: GhostWhite; -fx-background-radius: 10;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/remove.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
